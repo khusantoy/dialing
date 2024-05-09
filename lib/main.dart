@@ -448,8 +448,11 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    const SizedBox(
+                      width: 85,
+                    ),
                     SizedBox(
                       width: 90,
                       height: 90,
@@ -462,6 +465,18 @@ class _MyAppState extends State<MyApp> {
                           Icons.phone,
                           size: 50,
                           color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 80,
+                      height: 80,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.backspace_rounded,
+                          size: 40,
+                          color: Colors.grey.shade400,
                         ),
                       ),
                     )
